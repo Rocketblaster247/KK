@@ -1,14 +1,16 @@
 <html>
 
-<div id='Stuff'></div>
+<ol id='Stuff'></ol>
   
 <script>
 var s = document.getElementById("Stuff");
 for (var i = 0; i < 4000; i ++) {
+  var j = document.createElement("li");
   var e = document.createElement("img");
   e.src = "https://kartkingdom.pbskids.org/assets/products/"+i+"/shop.png";
   e.title = i;
-  s.appendChild(e);
+  j.appendChild(e);
+  s.appendChild(j);
   e = undefined;
 }
 </script>
